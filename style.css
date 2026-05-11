@@ -1,0 +1,270 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #111;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  padding: 20px 40px;
+  border-bottom: 1px solid #eaeaea;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #666;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: #000;
+  transform: translateY(-2px);
+}
+
+.nav-links a.active {
+  color: #000;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+}
+
+/* HERO IMAGE (WITH ANIMATION) */
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 30%;
+  animation: fadeIn 1s ease-out;
+}
+
+/* HERO TEXT */
+.hero-text {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.hero-text p {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* MAIN CONTENT (WITH PAGE FADE-IN) */
+.container {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 20px;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.container h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.container p {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* ABOUT PAGE */
+.about {
+  padding: 80px 20px;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-image img {
+  width: 220px;
+  border-radius: 6px;
+}
+
+.about-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* PROJECT PAGE SYSTEM */
+
+/* HERO */
+.project-hero {
+  max-width: 800px;
+  margin: 100px auto 40px;
+  padding: 0 20px;
+}
+
+.project-hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.project-hero p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* CONTAINER */
+.project-container {
+  max-width: 800px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+}
+
+/* IMAGES */
+.project-container img {
+  width: 100%;
+  margin: 40px 0;
+  border-radius: 4px;
+  display: block;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.project-container img:hover {
+  transform: scale(1.02);
+  opacity: 0.95;
+}
+
+/* TEXT */
+.project-text {
+  margin-bottom: 40px;
+}
+
+.project-text h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.project-text p {
+  color: #444;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 80px;
+  border-top: 1px solid #eaeaea;
+  font-size: 13px;
+  color: #666;
+}
+
+/* FEATURED WORK */
+.featured-work {
+  margin-top: 80px;
+}
+
+.featured-work h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* PROJECT CARD ANIMATION (HOVER LIFT) */
+.project-card {
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.03);
+}
+
+.project-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+  transition: opacity 0.25s ease, letter-spacing 0.25s ease;
+}
+
+.project-card a:hover {
+  opacity: 0.6;
+  letter-spacing: 1.5px;
+}
+
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
